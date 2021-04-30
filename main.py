@@ -1,7 +1,7 @@
 import re
 import os
 
-allwordsFilepath = os.path.abspath("allwords.txt") # find the filepath to the allwords file in the current directory
+allwordsFilepath = os.path.abspath("Hangman-solver/allwords.txt") # find the filepath to the allwords file in the current directory
 allwords = open(allwordsFilepath, "r").read().splitlines() 
 
 unknown = input('enter the word with "_" for each unknown: ')
