@@ -1,6 +1,8 @@
 import re
+import os
 
-allwords = open(r"C:\Users\Ollie\.vscode\Projects\hangmansolver 2.0\allwords.txt", "r").read().splitlines() 
+allwordsFilepath = os.path.abspath("allwords.txt") # find the filepath to the allwords file in the current directory
+allwords = open(allwordsFilepath, "r").read().splitlines() 
 
 unknown = input('enter the word with "_" for each unknown: ')
 unknown = [char.lower() for char in unknown]
